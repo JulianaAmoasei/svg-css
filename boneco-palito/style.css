@@ -1,0 +1,46 @@
+#grupo {
+  position: relative;
+}
+
+.feliz{
+  animation: feliz 0.2s ease-out 1;
+  fill: #fcee21;
+}
+
+.triste{
+  animation: triste 0.2s ease-out 1;
+  fill: #da2801;
+}
+
+.boca-triste {
+  transform: rotate(180deg) translate(-213px, -255px);
+}
+
+
+@keyframes triste {
+  to {
+    fill: #da2801;
+  }
+  from {
+    fill: #fcee21;    
+  }
+}
+
+@keyframes feliz {
+  to {
+    fill: #fcee21;
+  }
+  from {
+    fill: #da2801;    
+  }
+}
+
+/*@keyframes boca-triste {
+  to {
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  }
+}
+*/
+
+

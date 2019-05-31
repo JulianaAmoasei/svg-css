@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  height: 99vh;
+}
+
+.cresce {
+  transform-origin:  0 500px;
+  animation: cresce-animacao 1s ease-out;
+}
+
+@keyframes cresce-animacao {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.dancinha:hover {
+  transform-origin: bottom center;
+  animation: dancinha-animacao 2s ease-in-out infinite;
+}
+
+@keyframes dancinha-animacao {
+  0% {transform: rotateX(20deg);}
+  25% {transform: rotateX(-20deg);}
+  50% {transform: rotateX(30deg);}
+  75% {transform: rotateX(-15deg);}
+  90% {transform: rotateX(0deg);}
+  100% {transform: rotateX(20deg);}
+}
